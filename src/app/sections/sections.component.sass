@@ -1,0 +1,127 @@
+@import '~sass/reset'
+@import '~sass/variables'
+@import '~sass/mixins'
+
+
+content
+    margin-top: 65px
+
+    section
+        min-height: 700px
+
+    .section_1, .section_2, .section_3, .section_4
+        padding: 60px
+
+    .section_1, .section_3
+        background-color: $white
+
+    .section_2, .section_4
+        background-color: $gray_light
+
+    header
+        button
+            border: 0
+            background: transparent
+            padding: 0
+            padding: 19px
+        img
+            width: 150px
+            cursor: pointer
+            position: relative
+            top: 6px
+
+    h1, h2, h3
+        font-family: $fonth
+        color: $turquoise_black
+
+    h1
+        font-size: $box-pad*2
+        line-height: 700px
+        text-align: center
+
+    h2
+        font-size: $box-pad*2
+
+    h3
+        font-size: $box-pad
+
+    p
+        margin-bottom: $box-pad/3 !important
+        line-height: $box-pad/1.2
+
+    .section_2
+        display: flex
+        flex-direction: row
+        //.photo
+            width: $box-pad*30
+            height: auto
+            background-color: transparent
+        .content_formation, .content_experiences
+            aside
+                display: flex
+                flex-direction: row
+                div
+                    text-align: center
+                    width: 300px
+                    .date
+                        color: $pink
+                    .poste
+                        font-weight: bold
+        .content_formation
+            aside
+                justify-content: space-between
+        .content_experiences
+            aside
+                justify-content: space-around
+
+    //.section_3
+        ul
+            display: flex
+            flex-direction: row
+            li
+                padding: $box-pad/2
+                //font-weight: bold
+                @include transition(1s)
+                &:first-child
+                    padding-left: 0
+                &:hover
+                    color: $pink
+                    text-decoration: underline
+
+    .section_4
+        div
+            display: flex
+            flex-direction: row
+            justify-content: space-between
+            article
+                width: 30%
+                display: flex
+                flex-direction: column
+                text-align: center
+                &:nth-child(2)
+                    margin: 0 $box-pad*2
+                //&:last-child
+                    font-size: $box-pad
+                input, textarea
+                    margin-bottom: $box-pad/1.2
+                    border: none
+                    padding: $box-pad/2
+                    font-size: $box-pad/2
+                    color: $gray_trusted
+                input
+                    height: $box-pad/2
+                button
+                    height: $box-pad*1.5
+                    cursor: pointer
+                    margin: auto
+                    padding: $box-pad/3 $box-pad/2
+                    font-size: 1.2em
+                    border-radius: 50px
+                    border: 1px solid $turquoise_black
+                    letter-spacing: 0.7
+                    background-color: $turquoise_black
+                    color: $white
+                    @include transition(.4s)
+                    &:hover
+                        background-color: transparent
+                        color: $turquoise_black
