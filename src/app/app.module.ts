@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { MainMenuComponent } from './main-menu/main-menu.component';
 import { MainFooterComponent } from './main-footer/main-footer.component';
 import { SocialMenuComponent } from './social-menu/social-menu.component';
+import { SectionsComponent } from './sections/sections.component';
 
 
 @NgModule({
@@ -13,7 +14,8 @@ import { SocialMenuComponent } from './social-menu/social-menu.component';
     AppComponent,
     MainMenuComponent,
     MainFooterComponent,
-    SocialMenuComponent
+    SocialMenuComponent,
+    SectionsComponent
   ],
   imports: [
     BrowserModule
