@@ -1,6 +1,54 @@
 /* You can add global styles to this file, and also import other style files */
-@import './vars'
+@import './variables'
+@import './mixins'
+
+@import './main-menu'
+@import './main-footer'
+
+
+
+// Google Fonts
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700')
+@import url('https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700')
+@import url('http://fr.allfont.net/allfont.css?fonts=bebas-neue')
+
+html, body
+    padding: 0
+    margin: 0
+    font-family: 'Montserrat', sans-serif
 
 body
-    color: $font-color
-    background-color: $background-color
+    display: -webkit-box
+    display: -moz-box
+    display: -ms-flexbox
+    display: -webkit-flex
+    display: flex
+
+    -webkit-flex-flow: row wrap
+    flex-flow: row wrap
+
+    color: $gray_trusted
+
+body > *
+    flex: 1 100%
+
+// @import url(https://fonts.googleapis.com/css?family=Roboto)
+// @import url('https://fonts.googleapis.com/css?family=Raleway')
+// @import url('https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900')
+//
+// body
+//     // font-family: "Raleway" ,-apple-system,BlinkMacSystemFont,"Helvetica Neue","Segoe UI","Oxygen","Ubuntu","Cantarell","Open Sans",sans-serif
+//     font-family: "Lato" ,-apple-system,BlinkMacSystemFont,"Helvetica Neue","Segoe UI","Oxygen","Ubuntu","Cantarell","Open Sans",sans-serif
+//     letter-spacing: initial
+//
+// video
+//     max-width: 100%
+//
+// a
+//     text-decoration: none
+//     color: inherit !important
+
+h1, h2, h3, h4, p
+    margin-bottom: 20px
+    @media screen and (max-width: $break-md)
+        margin-bottom: 15px

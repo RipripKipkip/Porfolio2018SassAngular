@@ -1,0 +1,108 @@
+@mixin opacity($opacity)
+    opacity: $opacity
+    $opacity-ie: $opacity * 100
+    filter: alpha(opacity=$opacity-ie)
+    //IE8
+
+@mixin transition($transition...)
+    -moz-transition:    $transition
+    -o-transition:      $transition
+    -webkit-transition: $transition
+    transition:         $transition
+
+@mixin transition-property($property...)
+    -moz-transition-property:    $property
+    -o-transition-property:      $property
+    -webkit-transition-property: $property
+    transition-property:         $property
+
+@mixin transition-duration($duration...)
+    -moz-transition-property:    $duration
+    -o-transition-property:      $duration
+    -webkit-transition-property: $duration
+    transition-property:         $duration
+
+// generic transform
+@mixin transform($transforms)
+	-moz-transform: $transforms
+	-o-transform: $transforms
+	-ms-transform: $transforms
+	-webkit-transform: $transforms
+    transform: $transforms
+
+@mixin border-radius($radius)
+    -webkit-border-radius: $radius
+    -moz-border-radius: $radius
+    -ms-border-radius: $radius
+    border-radius: $radius
+
+// rotate
+@mixin rotate ($deg)
+  @include transform(rotate(#{$deg}deg))
+
+// scale
+@mixin scale($scale)
+	 @include transform(scale($scale))
+
+// translate
+@mixin translate ($x, $y)
+   @include transform(translate($x, $y))
+
+// skew
+@mixin skew ($x, $y)
+   @include transform(skew(#{$x}deg, #{$y}deg))
+
+//transform origin
+@mixin transform-origin ($origin)
+	moz-transform-origin: $origin
+	-o-transform-origin: $origin
+	-ms-transform-origin: $origin
+	-webkit-transform-origin: $origin
+    transform-origin: $origin
+
+@mixin shadow-ingrid-2
+	-moz-box-shadow: 0 0 7px 0 rgba(0,0,0,.13)
+	-webkit-box-shadow: 0 0 7px 0 rgba(0,0,0,.13)
+	-o-box-shadow: 0 0 7px 0 rgba(0,0,0,.13)
+	box-shadow: 0 0 7px 0 rgba(0,0,0,.13)
+
+@mixin shadow-ingrid-3
+	-moz-box-shadow: 0 0 10px 0 rgba(0,0,0,.5)
+	-webkit-box-shadow: 0 0 10px 0 rgba(0,0,0,.5)
+	-o-box-shadow: 0 0 10px 0 rgba(0,0,0,.5)
+	box-shadow: 0 0 10px 0 rgba(0,0,0,.5)
+
+@mixin shadow-ingrid-4
+	-moz-box-shadow: 0 0 60px rgba(0, 0, 0, 0.07), 0 0 20px rgba(0, 0, 0, 0.05)
+	-webkit-box-shadow: 0 0 60px rgba(0, 0, 0, 0.07), 0 0 20px rgba(0, 0, 0, 0.05)
+	-o-box-shadow: 0 0 60px rgba(0, 0, 0, 0.07), 0 0 20px rgba(0, 0, 0, 0.05)
+	box-shadow: 0 0 60px rgba(0, 0, 0, 0.07), 0 0 20px rgba(0, 0, 0, 0.05)
+
+@mixin button-ingrid-white
+	height: 60px
+	cursor: pointer
+	display: block
+	margin: auto
+	padding: 10px 15px
+	//text-transform: uppercase
+	font-size: 1.3em
+	font-weight: 600
+	color: $white
+	border-radius: 50px
+	border: none
+	letter-spacing: 0.7
+
+
+@mixin button-ingrid
+	height: 48px
+	cursor: pointer
+	display: block
+	margin: auto
+	padding: 10px 15px
+	//text-transform: uppercase
+	font-size: 1.1em
+	font-weight: 600
+	color: $white
+	border-radius: 50px
+	border: none
+	letter-spacing: 0.7
