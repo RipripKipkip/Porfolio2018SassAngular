@@ -24,6 +24,8 @@ To use this starter project, you'll need the following things installed on your 
 2. Inside the directory, run `npm install`.
 
 ## Project tree
+
+```sh
 .
 ├── e2e
 │   ├── app.e2e-spect.ts
@@ -58,6 +60,7 @@ To use this starter project, you'll need the following things installed on your 
 │   └── typings.d.ts
 ├── tsconfig.json
 └── tslint.json
+```
 
 <!-- ## Usage
 
