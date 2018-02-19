@@ -23,6 +23,42 @@ To use this starter project, you'll need the following things installed on your 
 1. Clone this repo, or download it into a directory of your choice.
 2. Inside the directory, run `npm install`.
 
+## Project tree
+.
+├── e2e
+│   ├── app.e2e-spect.ts
+│   ├── app.po.ts
+│   └── tsconfig.e2e.json
+├── karma.conf.js
+├── node_modules
+├── pachage-lock.json
+├── pachage.json
+├── protactor.conf.js
+├── README.md
+├── src
+│   ├── app
+│   │   ├── app.component.html
+│   │   ├── app.component.sass
+│   │   ├── app.component.spec.ts
+│   │   ├── app.component.ts
+│   │   └── app.module.ts
+│   ├── asset
+│   │   └── .gitkeep
+│   ├── environments
+│   │   ├── environment.prod.ts
+│   │   └── environment.ts
+│   ├── favicon.io
+│   ├── index.html
+│   ├── main.ts
+│   ├── polyfills.ts
+│   ├── styles.sass
+│   ├── test.ts
+│   ├── tsconfig.app.json
+│   ├── tsconfig.spec.json
+│   └── typings.d.ts
+├── tsconfig.json
+└── tslint.json
+
 <!-- ## Usage
 
 **development mode**
